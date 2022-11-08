@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodando o Javascript</title>
+    <script type="text/javascript" src="codigosjs.js"></script>
+</head>
+<body>
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <h2>Usando inputs para preencher variáveis</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="usuario_nome">
+
+        <label>Idade:</label>
+        <input type="number" id="idade" name="idade">
+
+        <label for="msg">Mensagem:</label>
+        <textarea name="usuario_msg" id="msg"></textarea>
+
+        <p><button id="botao" type="submit" onclick="gravar()">Cadastrar</button></p>
+        <div id="divinfogravadas">-</div>
+        <div id="divcontapessoas">0 pessoas contabilizadas</div>
+        <hr>
+    </form>
+</body>
+</html>
